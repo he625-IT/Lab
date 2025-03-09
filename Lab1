@@ -1,0 +1,8 @@
+import math as m
+m= ((123.4**2*m.log(2))**(1/3))/(1.124*(0.024)**(1/5)*m.cos(1))
+r= m.sin(int(-1/4*(m.atan(2)+m.atan(3))))
+if r>-2*m:
+    s= m.exp(-abs(m+r))
+else:
+    s=m*r
+print(s)

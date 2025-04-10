@@ -1,0 +1,12 @@
+import math as m
+x = 0.2
+epsilon = 0.01
+n = 1
+cem = 0
+while True:
+    t = m.sin((2*n - 1) * x) / m.factorial(2*n)
+    cem += t
+    if abs(t) < epsilon:
+        break
+    n += 1
+print(round(cem, 4))

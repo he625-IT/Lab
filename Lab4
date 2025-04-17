@@ -1,7 +1,6 @@
-s = []
-a = -3.0
-while a <= 21.0:
-    s.append(a)
-    a += 2.5 
-for i in:
-    print(i)
+import random
+n = int(input()
+siyahi = [random.uniform(-3, 21) for i in range(n)]
+
+for eded in siyahi:
+    print(eded)

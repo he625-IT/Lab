@@ -1,0 +1,12 @@
+import random
+def cemi_hesabla(n):
+    cem = 0  
+    i = 0
+    while i < n:
+        eded = random.random() 
+        cem += eded  
+        i += 1
+    return cem
+n = 10
+cem = cemi_hesabla(n)
+print(cem)

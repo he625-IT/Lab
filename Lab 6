@@ -1,0 +1,14 @@
+n = int(input())
+m = int(input())
+A = []
+for i in range(n):
+    sətir = []
+    for j in range(m):
+        element = int(input())
+        sətir.append(element)
+    A.append(sətir)
+cem = 0
+for i in range(n):
+    for j in range(m):
+        cem += A[i][j]
+print(cem)

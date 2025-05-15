@@ -1,0 +1,20 @@
+
+massiv = [12, 7, 4, 9, 20, 15, 6, 11]
+
+with open("ededler.txt", "w") as fayl:
+    for eded in massiv:
+        fayl.write(str(eded) + "\n")
+
+cut_ededler = []
+cem = 0
+
+with open("ededler.txt", "r") as fayl:
+    for setir in fayl:
+        eded = int(setir.strip())
+        if eded % 2 == 0:
+            cut_ededler.append(eded)
+            cem += eded
+with open("cut_ededler.txt", "w") as yeni_fayl:
+    for eded in cut_ededler:
+        yeni_fayl.write(str(eded) + "\n")
+    yeni_fayl.write(f"Cüt ədədlərin cəmi: {cem}")

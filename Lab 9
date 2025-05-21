@@ -1,0 +1,26 @@
+import math
+x1 = 0.4
+x2 = 0.6
+eps = 0.0001
+def f(x):
+    return math.sqrt(x) * math.cos(math.sqrt(x))
+def phi(x):
+    return x - f(x) 
+iter1 = 0
+while True:
+    yeni_x1 = phi(x1)
+    iter1 += 1
+    if abs(yeni_x1 - x1) < eps:
+        break
+    x1 = yeni_x1
+
+iter2 = 0
+while True:
+    yeni_x2 = phi(x2)
+    iter2 += 1
+    if abs(yeni_x2 - x2) < eps:
+        break
+    x2 = yeni_x2
+
+print("x1 ilə tapılan təxmini kök:", yeni_x1, f"({iter1} iterasiya)")
+print("x2 ilə tapılan təxmini kök:", yeni_x2, f"({iter2} iterasiya)")
